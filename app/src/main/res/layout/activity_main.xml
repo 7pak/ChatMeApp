@@ -34,28 +34,39 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_width="257dp"
+        android:layout_height="61dp"
         android:background="?attr/colorPrimary"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circle_image"
             android:layout_width="38dp"
             android:layout_height="38dp"
-            android:src="@drawable/ic_profile"/>
+            android:src="@drawable/ic_profile" />
 
         <TextView
+            android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/toolbar_title"
-            android:text="Chats"
             android:layout_marginStart="25dp"
+            android:text="Chats"
+            android:textColor="@color/black"
             android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/search_activity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_baseline_search_24"
+        app:layout_anchorGravity="start|center"
+        app:layout_constraintBottom_toTopOf="@+id/coordinator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

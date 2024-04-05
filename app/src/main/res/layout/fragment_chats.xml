@@ -6,44 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".fragment.ChatsFrag">
 
-    <EditText
-        android:id="@+id/editText"
+    <LinearLayout
+        android:id="@+id/linear_ll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/search_edit_background"
-        android:hint="Search People..."
-        android:maxHeight="48dp"
-        android:paddingStart="30dp"
-        android:paddingTop="13dp"
-        android:paddingBottom="13dp"
-        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:maxHeight="2dp"
+        android:padding="1dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal" />
 
-    <ImageView
-        android:id="@+id/search_activity"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="3dp"
-        android:src="@drawable/ic_baseline_search_24"
-        app:layout_anchor="@+id/editText"
-        app:layout_anchorGravity="start|center"
-        app:layout_constraintBottom_toBottomOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.538" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/myRecycler"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/linear_ll"
         tools:listitem="@layout/recycler_view_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

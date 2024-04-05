@@ -46,10 +46,6 @@ class ChatsFrag : Fragment() {
         addChatListener(::initRecycler)
 
          binding=FragmentChatsBinding.inflate(inflater, container, false)
-
-        binding.searchActivity.setOnClickListener {
-            activity?.startActivity(Intent(activity,SearchActivity::class.java))
-        }
         return binding.root
     }
     private fun addChatListener(onListen:(item:List<BindableItem<RecyclerViewItemBinding>>)->Unit):ListenerRegistration {

@@ -58,6 +58,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
 
+        binding.searchActivity.setOnClickListener {
+            startActivity(Intent(this,SearchActivity::class.java))
+        }
+
         binding.navBottom.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.chat_menu -> {
