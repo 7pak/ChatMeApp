@@ -1,0 +1,37 @@
+[debug] [2022-09-22T17:23:20.709Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T17:23:20.710Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gaming\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2022-09-22T17:23:20.711Z] CLI Version:   11.9.0
+[debug] [2022-09-22T17:23:20.711Z] Platform:      win32
+[debug] [2022-09-22T17:23:20.711Z] Node Version:  v16.17.0
+[debug] [2022-09-22T17:23:20.712Z] Time:          Thu Sep 22 2022 21:23:20 GMT+0400 (Gulf Standard Time)
+[debug] [2022-09-22T17:23:20.712Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T17:23:20.764Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T17:23:20.765Z] > authorizing via signed-in user (fatabdella7@gmail.com)
+[debug] [2022-09-22T17:23:20.765Z] [iam] checking project messenger-37670 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2022-09-22T17:23:20.767Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/messenger-37670:testIamPermissions [none]
+[debug] [2022-09-22T17:23:20.767Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/messenger-37670:testIamPermissions x-goog-quota-user=projects/messenger-37670
+[debug] [2022-09-22T17:23:20.767Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/messenger-37670:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-09-22T17:23:22.300Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/messenger-37670:testIamPermissions 200
+[debug] [2022-09-22T17:23:22.300Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/messenger-37670:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-09-22T17:23:22.300Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/messenger-37670/serviceAccounts/messenger-37670@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-09-22T17:23:22.301Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/messenger-37670/serviceAccounts/messenger-37670@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-09-22T17:23:23.812Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/messenger-37670/serviceAccounts/messenger-37670@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-09-22T17:23:23.812Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/messenger-37670/serviceAccounts/messenger-37670@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'messenger-37670'...
+[info] 
+[info] i  deploying functions 
+[debug] [2022-09-22T17:23:24.139Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:387:5)
+    at validateString (node:internal/validators:121:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\gaming\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:123:45)
+    at getChildEnvironment (C:\Users\gaming\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:51:49)
+    at runTargetCommands (C:\Users\gaming\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:72:14)
+    at C:\Users\gaming\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:124:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\gaming\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:9)
+    at async deploy (C:\Users\gaming\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:5)
+[error] 
+[error] Error: An unexpected error has occurred.
