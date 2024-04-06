@@ -44,7 +44,7 @@ class MyFireBaseMessagingService : FirebaseMessagingService(){
             .setContentText(message.data["message"])
             .setAutoCancel(true)
           //  .setContentIntent(pendingIntent)
-            .setSmallIcon(R.drawable.messenger)
+            .setSmallIcon(R.drawable.text_me)
             .build()
 
         notificationManager.notify(notificationId,notification)
